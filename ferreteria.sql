@@ -5,7 +5,8 @@ USE ferreteria;
 CREATE TABLE IF NOT EXISTS Producto (
     IDProducto INT AUTO_INCREMENT PRIMARY KEY,
     Nombre VARCHAR(255),
-    Precio DECIMAL(10, 2)
+    Precio DECIMAL(10, 2),
+    Stock INT DEFAULT 0
 );
 
 -- Crear la tabla Cliente
